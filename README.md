@@ -1,3 +1,3 @@
-#My own website
+ # My personal website 👨🏼‍💻
 
-Hi! I'm Javier Cuartero, I'm currently studying 4º Computer Engineering at Universidad de Castilla-La Mancha, so this is my own website, where I will publish all my projects. 
+Hi! I'm Javier Cuartero, I'm currently studying 4th-year Computer Engineering at the Universidad de Castilla-La Mancha. This is my personal website, where I'll be sharing all all my projects. 
