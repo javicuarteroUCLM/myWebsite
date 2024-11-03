@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles/";
@@ -26,7 +26,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">Javier 
             &nbsp;<span className="sm:block hidden">| 
-              Ing. Informático</span></p>
+              Software Engineer</span></p>
         </Link>
         <div className="flex flex-1 justify-end items-center">
           <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -80,6 +80,6 @@ const Navbar = () => {
   );
 };
 
-/*MINUTO 40:30*/
+/*MINUTO 54.00*/
 
 export default Navbar;
