@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motions";
 
+
 const Contact = () => {
   const formRef = useRef();
 
@@ -18,9 +19,57 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "Javier",
+        from_email: form.email,
+        to_email: "javiercuarterocorredor@gmail.com",
+        message: form.message,
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+  )
+  
+      .then(
+        () => {
+          setLoading(false);
+          alert(
+            "Thank you. I will get back to you as soon as posible.\nGracias por tu mensaje. En breve recibirás una respuesta."
+          );
+          console.log("Email sent successfully! From: ", form.email);
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          console.log(error);
+
+          alert(
+            "Oops! Something went wrong. Please try again later.\n¡Vaya! Algo salió mal. Por favor, inténtalo de nuevo."
+          );
+        }
+      );
+  };
 
   return (
     <div
