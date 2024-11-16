@@ -46,7 +46,9 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>What I have done so far</p>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <p className={styles.sectionSubText}>What I have done so far</p> <p className={styles.sectionSubTextLow}>(as freelance)</p>
+        </div>
       <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
 

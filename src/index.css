@@ -81,6 +81,22 @@
   -webkit-text-fill-color: transparent;
 }
 
+.yellow-text-gradient {
+  background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+  background-clip: text; /* Ensures the gradient is applied to text */
+  -webkit-background-clip: text; /* For Safari */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent so the gradient shows through */
+}
+
+.violet-text-gradient {
+  background: linear-gradient(109.6deg, rgba(119, 44, 232, 0.68) 11.5%, rgb(119, 44, 232) 91.2%);
+  background-clip: text; /* Ensures the gradient is applied to text */
+  -webkit-background-clip: text; /* For Safari */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent so the gradient shows through */
+}
+
+
+
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */
   background: #56ccf2; /* fallback for old browsers */

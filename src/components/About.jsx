@@ -41,21 +41,34 @@ const About = () => {
       <h2 className={styles.sectionHeadText}>Overview</h2>
     </motion.div>
 
-    <motion.p
-      variants={fadeIn("", "", 0.1, 1)}
-      className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-      I am a 4th-year Computer Engineering student, specializing in Information Technology.
+    <motion.div
+  variants={fadeIn("", "", 0.1, 1)}
+  className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] space-y-6'
+>
+  { }
+  <p>
+    I am a 4th-year Computer Engineering student, specializing in Information Technology.
+  </p>
 
-      I enjoy finding solutions to the challenges companies face in their processes, such as automation
-      and efficiency improvement. I am also passionate about helping organizations make the most of their data to gain a competitive edge in the market.
+  { }
+  <p>
+    I enjoy finding solutions to the challenges companies face in their processes, such as automation
+    and efficiency improvement. I am also passionate about helping organizations make the most of their data to gain a competitive edge in the market.
+  </p>
+  { }
 
-      Additionally, I am passionate about finance and I&apos;m continuously learning about it on my own. I aim to combine my technical engineering knowledge with financial
-      insights to create a unique skill set that adds value across both fields.
-      
-      Challenges, both professional and personal, are essential to me. Since I was young, I have been deeply involved in sports, something that cannot be missing in my life.
-      Over the years, I have practiced many sports, which have taught me resilience, discipline, and the importance of continuous improvement.
-      </motion.p>
+  <p>
+    Additionally, I am passionate about finance and I&apos;m continuously learning about it on my own. 
+    I aim to combine my technical engineering knowledge with financial insights to create a unique skill 
+    set that adds value across both fields.
+  </p>
+
+  { }
+  <p>
+    Challenges, both professional and personal, are essential to me. Since I was young, I have been deeply involved in sports, something that cannot be missing in my life. Over the years, I have practiced many sports, which have taught me resilience, discipline, and the importance of continuous improvement.
+  </p>
+</motion.div>
+
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
